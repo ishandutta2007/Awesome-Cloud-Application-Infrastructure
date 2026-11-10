@@ -62,9 +62,9 @@ Below is a comparison of top cloud application infrastructure SaaS & hosted plat
 
 ## 💻 Open-Source Cloud Infrastructure Projects
 
-A collection of top open-source cloud application infrastructure frameworks, container orchestrators, infrastructure-as-code engines, and self-hosted PaaS stacks, ranked by **GitHub Star Count** descending:
+A collection of top open-source cloud application infrastructure frameworks, container orchestrators, infrastructure-as-code engines, and self-hosted PaaS stacks, ranked by **GitHub Stars_Count** descending:
 
-| Project | ⭐ GitHub Stars | 🎯 Focus Area | 📖 Description |
+| Project | ⭐ GitHub_Stars | 🎯 Focus Area | 📖 Description |
 |:--------|:-------------|:-----------|:------------|
 | **[Kubernetes](https://github.com/kubernetes/kubernetes)** | [![Stars](https://img.shields.io/github/stars/kubernetes/kubernetes?style=social&color=white)](https://github.com/kubernetes/kubernetes/stargazers) | Container Orchestration | Automated deployment, scaling, and operational management of containerized applications; the standard backbone of modern cloud platform engineering. |
 | **[Ansible](https://github.com/ansible/ansible)** | [![Stars](https://img.shields.io/github/stars/ansible/ansible?style=social&color=white)](https://github.com/ansible/ansible/stargazers) | Automation & Config Mgmt | Radically simple IT automation system handling configuration management, application deployment, cloud provisioning, and ad-hoc task execution. |
@@ -129,7 +129,7 @@ We welcome additions, corrections, and improvements from DevOps practitioners, p
 
 1. **Fork the repository** to your GitHub account.
 2. **Add or edit entries** in `README.md` keeping formatting, accurate pricing, free tier details, and stargazer badges consistent.
-3. Ensure open-source projects are placed in the table corresponding to their star count order.
+3. Ensure open-source projects are placed in the table corresponding to their Stars_Count order.
 4. **Submit a pull request** outlining the suggested changes and linking authoritative references.
 
 ---
