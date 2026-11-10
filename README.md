@@ -1,32 +1,51 @@
-# Awesome Cloud Application Infrastructure [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<div align="center">
 
-> A curated directory of top **Cloud Application Infrastructure** SaaS platforms and open-source GitHub projects covering compute, object storage, serverless, networking, and platform engineering tooling.
+<img src="./assets/banner.svg" alt="Awesome Cloud Application Infrastructure Banner" width="100%" />
 
-Modern cloud application infrastructure forms the foundation for architecting, deploying, and scaling digital workloads across public hyperscalers, developer-first clouds, and self-hosted bare metal. This repository tracks both leading hosted platforms and actively maintained open-source cloud infrastructure software.
+# ☁️ Awesome Cloud Application Infrastructure
 
----
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Mentioned in Awesome" /></a>
+  <img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Application-Infrastructure?style=flat-square&color=gold" alt="Repo Stars" />
+  <img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Application-Infrastructure?style=flat-square&color=blue" alt="Repo Forks" />
+  <img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Cloud-Application-Infrastructure?style=flat-square" alt="License" />
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-## Sector Overview & Market Dynamics
+**A curated, production-tested directory of leading Cloud Application Infrastructure SaaS platforms and open-source GitHub projects.**  
+*Covering compute, distributed storage, serverless runtimes, eBPF networking, and cloud platform engineering tools.*
 
-The global cloud infrastructure services (IaaS/PaaS) market is estimated at **$290+ billion in 2024–2025** and projected to surpass **$650+ billion by 2030** (CAGR ~17–20%), propelled by enterprise modernization, cloud-native architectures, and generative AI workloads. The sector remains **highly concentrated**, characterized by an oligopoly where the "Big Three" hyperscalers (AWS, Microsoft Azure, and Google Cloud) control roughly 65% of global market share, while regional specialists, European sovereign clouds, and developer-centric PaaS/IaaS providers contest the remaining market segments with specialized performance, compliance, and predictable cost structures.
-
----
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Hosted Cloud Platforms](#saas--hosted-cloud-platforms)
-- [Open-Source Cloud Infrastructure Projects](#open-source-cloud-infrastructure-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+</div>
 
 ---
 
-## SaaS & Hosted Cloud Platforms
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Cloud Platforms](#-saas--hosted-cloud-platforms)
+- [💻 Open-Source Cloud Infrastructure Projects](#-open-source-cloud-infrastructure-projects)
+- [🏗️ Architecture Blueprint](#️-architecture-blueprint)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚖️ Disclaimer](#️-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global cloud infrastructure services (IaaS/PaaS) market is estimated at **$290+ billion in 2024–2025** and projected to surpass **$650+ billion by 2030** (CAGR ~17–20%), propelled by enterprise modernization, cloud-native architectures, and generative AI workloads. 
+
+The sector remains **highly concentrated**, characterized by an oligopoly where the "Big Three" hyperscalers (AWS, Microsoft Azure, and Google Cloud) control roughly 65% of global market share, while regional specialists, European sovereign clouds, and developer-centric PaaS/IaaS providers contest the remaining market segments with specialized performance, compliance, and predictable cost structures.
+
+---
+
+## 🏢 SaaS & Hosted Cloud Platforms
 
 Below is a comparison of top cloud application infrastructure SaaS & hosted platforms, ordered by **Company Scale (Market Cap / Valuation / Revenue)** descending:
 
-| Product | Scale (Valuation / Market Cap / Rev) | Description | Starting Pricing | Free Tier / Trial Limits |
+| Product | 📈 Scale (Valuation / Market Cap / Rev) | 📝 Description | 💵 Starting Pricing | 🎁 Free Tier / Trial Limits |
 |:--------|:-------------------------------------|:------------|:-----------------|:-------------------------|
 | **[Microsoft Azure](https://azure.microsoft.com/)** | ~$3.1T Market Cap (~$110B+ Cloud Run-Rate) | Enterprise-grade global hyperscaler with native integration across Active Directory, Microsoft 365, GitHub, and hybrid management via Azure Arc. | B1s Linux VM from ~$0.0116/hour; Blob Storage from $0.018/GB/month | **12 Months Free**: 750 hrs B1s VM, 5GB Blob Storage, 55+ always-free services; $200 credits for 30-day trial |
 | **[Amazon Web Services (AWS)](https://aws.amazon.com/)** | ~$2.2T Market Cap (Amazon parent; AWS ~$105B+ ARR) | Market-share leader in public cloud computing offering 200+ managed services spanning compute (EC2), object storage (S3), relational databases (RDS), and serverless (Lambda). | t3.micro Linux EC2 from ~$0.0104/hour; S3 Standard from $0.023/GB/month | **12 Months Free**: 750 hrs/month t2.micro/t3.micro, 5GB S3, 750 hrs RDS; $200 promotional credits upon signup |
@@ -41,18 +60,18 @@ Below is a comparison of top cloud application infrastructure SaaS & hosted plat
 
 ---
 
-## Open-Source Cloud Infrastructure Projects
+## 💻 Open-Source Cloud Infrastructure Projects
 
 A collection of top open-source cloud application infrastructure frameworks, container orchestrators, infrastructure-as-code engines, and self-hosted PaaS stacks, ranked by **GitHub Star Count** descending:
 
-| Project | GitHub Stars | Focus Area | Description |
+| Project | ⭐ GitHub Stars | 🎯 Focus Area | 📖 Description |
 |:--------|:-------------|:-----------|:------------|
 | **[Kubernetes](https://github.com/kubernetes/kubernetes)** | [![Stars](https://img.shields.io/github/stars/kubernetes/kubernetes?style=social&color=white)](https://github.com/kubernetes/kubernetes/stargazers) | Container Orchestration | Automated deployment, scaling, and operational management of containerized applications; the standard backbone of modern cloud platform engineering. |
 | **[Ansible](https://github.com/ansible/ansible)** | [![Stars](https://img.shields.io/github/stars/ansible/ansible?style=social&color=white)](https://github.com/ansible/ansible/stargazers) | Automation & Config Mgmt | Radically simple IT automation system handling configuration management, application deployment, cloud provisioning, and ad-hoc task execution. |
 | **[Coolify](https://github.com/coollabsio/coolify)** | [![Stars](https://img.shields.io/github/stars/coollabsio/coolify?style=social&color=white)](https://github.com/coollabsio/coolify/stargazers) | Self-Hosted PaaS | Self-hostable, all-in-one alternative to Heroku/Netlify/Vercel; deploy applications, databases, and Docker containers across your own servers. |
 | **[MinIO](https://github.com/minio/minio)** | [![Stars](https://img.shields.io/github/stars/minio/minio?style=social&color=white)](https://github.com/minio/minio/stargazers) | High-Performance Object Storage | S3-compatible high-performance object storage server designed for cloud-native AI/ML workloads, Kubernetes deployments, and hybrid clouds. |
 | **[Terraform](https://github.com/hashicorp/terraform)** | [![Stars](https://img.shields.io/github/stars/hashicorp/terraform?style=social&color=white)](https://github.com/hashicorp/terraform/stargazers) | Infrastructure-as-Code | Declarative infrastructure-as-code engine enabling engineers to provision and version multi-cloud architecture across hundreds of providers. |
-| **[K3s](https://github.com/k3s-io/k3s)** | [![Stars](https://img.shields.io/github/stars/k3s-io/k3s)](https://github.com/k3s-io/k3s/stargazers) | Lightweight Kubernetes | Highly available, certified lightweight Kubernetes distribution packaged as a single binary; ideal for edge computing, IoT, ARM, and CI environments. |
+| **[K3s](https://github.com/k3s-io/k3s)** | [![Stars](https://img.shields.io/github/stars/k3s-io/k3s?style=social&color=white)](https://github.com/k3s-io/k3s/stargazers) | Lightweight Kubernetes | Highly available, certified lightweight Kubernetes distribution packaged as a single binary; ideal for edge computing, IoT, ARM, and CI environments. |
 | **[Dokku](https://github.com/dokku/dokku)** | [![Stars](https://img.shields.io/github/stars/dokku/dokku?style=social&color=white)](https://github.com/dokku/dokku/stargazers) | Docker-Powered PaaS | The smallest PaaS implementation you've ever seen; Docker-powered single-host application deployment platform via `git push`. |
 | **[OpenTofu](https://github.com/opentofu/opentofu)** | [![Stars](https://img.shields.io/github/stars/opentofu/opentofu?style=social&color=white)](https://github.com/opentofu/opentofu/stargazers) | Open-Source IaC | Community-driven, open-source fork of Terraform governed under the Linux Foundation (MPL-2.0 licensed). |
 | **[Rancher](https://github.com/rancher/rancher)** | [![Stars](https://img.shields.io/github/stars/rancher/rancher?style=social&color=white)](https://github.com/rancher/rancher/stargazers) | Multi-Cluster K8s Management | Complete software stack for teams adopting containers; manages multiple Kubernetes clusters across on-premises bare metal and public clouds. |
@@ -67,7 +86,7 @@ A collection of top open-source cloud application infrastructure frameworks, con
 
 ---
 
-## Architecture Blueprint: Building a Modern Cloud Application Stack
+## 🏗️ Architecture Blueprint
 
 ```mermaid
 flowchart TD
@@ -104,7 +123,7 @@ flowchart TD
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
 We welcome additions, corrections, and improvements from DevOps practitioners, platform engineers, and open-source maintainers:
 
@@ -115,11 +134,32 @@ We welcome additions, corrections, and improvements from DevOps practitioners, p
 
 ---
 
-## Disclaimer
+##  Star History
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Cloud-Application-Infrastructure&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Cloud-Application-Infrastructure&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and using this curated cloud infrastructure directory! 🌟
+
+If you find this repository valuable for your projects, architecture planning, or engineering teams, please consider supporting the project:
+
+- ⭐ **Star this repository** on GitHub to increase visibility.
+- 🍴 **Fork and share** it with fellow DevOps engineers, platform architects, and developers.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance, updates, and research via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Every contribution and share helps keep this resource accurate, comprehensive, and up-to-date!
+
+---
+
+## ⚖️ Disclaimer
 
 - This list is independently curated by the community for educational and architecture-evaluation purposes. It is not sponsored by or affiliated with any cloud provider.
 - Cloud infrastructure pricing, promotional credit amounts, and free tier quotas change frequently. Always consult the respective vendor's official pricing calculator before provisioning production systems.
 
 ---
 
-*Curated with precision for platform engineers, DevOps professionals, site reliability engineers (SREs), and cloud architects.*
+<div align="center">
+  <sub>Curated with precision for platform engineers, DevOps professionals, site reliability engineers (SREs), and cloud architects.</sub>
+</div>
