@@ -1,78 +1,125 @@
-# Awesome-Cloud-Application-Infrastructure
+# Awesome Cloud Application Infrastructure [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Cloud Application Infrastructure Ecosystem
+> A curated directory of top **Cloud Application Infrastructure** SaaS platforms and open-source GitHub projects covering compute, object storage, serverless, networking, and platform engineering tooling.
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Compute, Storage, Networking & Managed Platform Services*  
-**Last updated: March 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cloud Application Infrastructure**. These platforms provide the foundational compute, storage, networking, and managed services required to build, deploy, and scale modern applications—covering everything from hyperscale public clouds to developer-friendly alternatives and self-hosted infrastructure stacks.
-
-**Examples** include AWS, Microsoft Azure, Google Cloud Platform, IBM Cloud, Oracle Cloud Infrastructure, DigitalOcean, Linode (Akamai), OVHcloud, Alibaba Cloud, and Freshworks Cloud Infrastructure (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted cloud infrastructure, open-source platform-as-a-service, and infrastructure-as-code frameworks—ideal for platform engineers, DevOps teams, and organizations seeking transparent, vendor-neutral alternatives to proprietary cloud services.
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Amazon Web Services (AWS)](https://aws.amazon.com/)** | The largest public cloud provider with 200+ services spanning compute (EC2), storage (S3), databases (RDS, DynamoDB), networking, AI/ML, and serverless (Lambda). Global infrastructure across 30+ regions. | EC2 from ~$0.0104/hour (t3.micro Linux); S3 from $0.023/GB/month | **12-month free tier**: 750 hours/month t2.micro/t3.micro EC2, 5GB S3, 750 hours RDS; new accounts get up to $200 credits (6-month validity) |
-| **[Microsoft Azure](https://azure.microsoft.com/)** | Microsoft's enterprise cloud with deep integration into Active Directory, Office 365, and the .NET ecosystem. Strong hybrid cloud capabilities via Azure Arc and ExpressRoute. | Virtual Machines from ~$0.0116/hour (B1s Linux); Blob Storage from $0.018/GB/month | **12-month free tier**: 750 hours B1s VM, 5GB Blob Storage; $200 credit for 30 days; 55+ always-free services |
-| **[Google Cloud Platform (GCP)](https://cloud.google.com/)** | Google's cloud with strengths in data analytics (BigQuery), Kubernetes (GKE), and machine learning (Vertex AI). Premium global network and live migration for VMs. | Compute Engine from ~$0.0104/hour (e2-micro); Cloud Storage from $0.020/GB/month | **$300 credit for 90 days**; always-free tier: 1 e2-micro VM (us regions), 5GB Cloud Storage, 1GB BigQuery queries/month |
-| **[IBM Cloud](https://www.ibm.com/cloud)** | Enterprise-focused cloud with strength in regulated industries, AI (Watson), and hybrid cloud via Red Hat OpenShift. | Virtual Servers from ~$0.047/hour (bx2-2x8); Object Storage from $0.023/GB/month | **Lite plan**: free services including 25GB Object Storage, 500MB Cloudant, limited Kubernetes cluster; $200 credit for 30 days |
-| **[Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud/)** | Oracle's cloud with aggressive free tier and strong database (Autonomous Database) and enterprise application (ERP, HCM) integration. | Compute from ~$0.0075/hour (VM.Standard.E4.Flex); Block Volume from $0.0255/GB/month | **Always Free**: 2 AMD VMs (1/8 OCPU, 1GB RAM each), 4 Arm Ampere A1 cores + 24GB RAM, 200GB Block Volume, 10GB Object Storage, 2 Autonomous Databases |
-| **[DigitalOcean](https://www.digitalocean.com/)** | Developer-friendly cloud with simplified pricing and strong documentation. Popular for small teams, startups, and individual developers. | Droplets from $4/month (512MB RAM); Spaces from $5/month (250GB) | **$200 credit for 60 days**; no permanent free tier for Droplets |
-| **[Linode (Akamai)](https://www.linode.com/)** | Developer-focused cloud (acquired by Akamai) with predictable pricing and a loyal community. Strong for small-to-mid workloads. | Nanode 1GB from $5/month; Block Storage from $0.10/GB/month | **$100 credit for 60 days**; no permanent free tier |
-| **[OVHcloud](https://www.ovhcloud.com/)** | European cloud provider with strong data sovereignty positioning, competitive bare-metal, and public cloud offerings. | VPS from ~$3.50/month; Public Cloud instances from ~$0.0087/hour | No permanent free tier; trial credits occasionally available via promotions |
-| **[Alibaba Cloud](https://www.alibabacloud.com/)** | China's largest cloud provider with global regions, strong e-commerce ecosystem integration, and competitive pricing for Asia-Pacific workloads. | ECS from ~$0.012/hour (t5-lc1m1.small); OSS from $0.018/GB/month | **Free trial**: $300–$1,200 in credits depending on region; 12-month free tier for select services |
-| **[Freshworks Cloud Infrastructure](https://www.freshworks.com/)** | SaaS application platform (not IaaS) providing customer engagement, ITSM, and CRM software. Underlying infrastructure is managed by Freshworks; users consume applications rather than raw compute. | Freshdesk from $19/agent/month; Freshservice from $23/agent/month | Freshdesk free for 1–2 agents for 6 months; Freshsales free for 3 users; 14–21 day trials |
-
-## Open-Source GitHub Projects
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Kubernetes](https://github.com/kubernetes/kubernetes)** | [![Stars](https://img.shields.io/github/stars/kubernetes/kubernetes?style=social&color=white)](https://github.com/kubernetes/kubernetes/stargazers) | Container orchestration platform that has become the de facto standard for deploying and managing containerized applications across clouds. CNCF graduated project; the foundation for most modern platform engineering. |
-| **[OpenStack](https://github.com/openstack/openstack)** | [![Stars](https://img.shields.io/github/stars/openstack/openstack?style=social&color=white)](https://github.com/openstack/openstack/stargazers) | Open-source cloud computing platform for building public and private IaaS clouds. Provides compute (Nova), storage (Swift, Cinder), networking (Neutron), and identity (Keystone) services. |
-| **[Terraform](https://github.com/hashicorp/terraform)** | [![Stars](https://img.shields.io/github/stars/hashicorp/terraform?style=social&color=white)](https://github.com/hashicorp/terraform/stargazers) | Infrastructure-as-code tool for provisioning and managing cloud resources across providers (AWS, Azure, GCP, and 100+ others). The standard for declarative infrastructure management. |
-| **[OpenTofu](https://github.com/opentofu/opentofu)** | [![Stars](https://img.shields.io/github/stars/opentofu/opentofu?style=social&color=white)](https://github.com/opentofu/opentofu/stargazers) | Open-source Terraform fork (MPL-2.0) under Linux Foundation governance. Drop-in compatible with Terraform while remaining fully open-source and community-driven. |
-| **[Pulumi](https://github.com/pulumi/pulumi)** | [![Stars](https://img.shields.io/github/stars/pulumi/pulumi?style=social&color=white)](https://github.com/pulumi/pulumi/stargazers) | Infrastructure-as-code using general-purpose programming languages (TypeScript, Python, Go, .NET). Apache 2.0 licensed; supports all major clouds. |
-| **[Cloud Foundry](https://github.com/cloudfoundry)** | [![Stars](https://img.shields.io/github/stars/cloudfoundry?style=social&color=white)](https://github.com/cloudfoundry/stargazers) | Open-source platform-as-a-service for deploying and scaling applications without managing infrastructure. Provides buildpacks, service brokers, and container orchestration. |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[OpenShift (OKD)](https://github.com/openshift/okd)** | [![Stars](https://img.shields.io/github/stars/openshift/okd?style=social&color=white)](https://github.com/openshift/okd/stargazers) | The community distribution of Kubernetes that powers Red Hat OpenShift. Adds developer workflows, CI/CD, and operational tooling on top of vanilla Kubernetes. |
-| **[Proxmox VE](https://github.com/proxmox)** | [![Stars](https://img.shields.io/github/stars/proxmox?style=social&color=white)](https://github.com/proxmox/stargazers) | Open-source virtualization platform combining KVM and LXC for private cloud and homelab infrastructure. Web-based management interface; AGPL licensed. |
-| **[Apache CloudStack](https://github.com/apache/cloudstack)** | [![Stars](https://img.shields.io/github/stars/apache/cloudstack?style=social&color=white)](https://github.com/apache/cloudstack/stargazers) | Open-source IaaS platform for building public, private, and hybrid clouds. Apache 2.0 licensed; used by service providers worldwide. |
-| **[Crossplane](https://github.com/crossplane/crossplane)** | [![Stars](https://img.shields.io/github/stars/crossplane/crossplane?style=social&color=white)](https://github.com/crossplane/crossplane/stargazers) | Kubernetes-native control plane for provisioning and managing cloud infrastructure using CRDs. CNCF project; enables platform teams to build internal developer platforms. |
-
-**Frameworks for building custom systems**: Combine **Kubernetes** for container orchestration, **Terraform** or **OpenTofu** for infrastructure provisioning, **Crossplane** for Kubernetes-native cloud resource management, and **Proxmox VE** or **OpenStack** for private cloud foundations—creating a fully self-hosted application infrastructure stack.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Cloud infrastructure platforms handle sensitive workloads and data; enforce least-privilege IAM policies, network segmentation, and encryption at rest and in transit.
-- Free tier limits and pricing change frequently; always verify against the provider's current pricing page before making architectural or budgetary decisions.
+Modern cloud application infrastructure forms the foundation for architecting, deploying, and scaling digital workloads across public hyperscalers, developer-first clouds, and self-hosted bare metal. This repository tracks both leading hosted platforms and actively maintained open-source cloud infrastructure software.
 
 ---
 
-**Made for platform engineers, DevOps teams, cloud architects, and developers building application infrastructure.**  
-Let's make cloud infrastructure more open, observable, and cost-transparent.
+## Sector Overview & Market Dynamics
+
+The global cloud infrastructure services (IaaS/PaaS) market is estimated at **$290+ billion in 2024–2025** and projected to surpass **$650+ billion by 2030** (CAGR ~17–20%), propelled by enterprise modernization, cloud-native architectures, and generative AI workloads. The sector remains **highly concentrated**, characterized by an oligopoly where the "Big Three" hyperscalers (AWS, Microsoft Azure, and Google Cloud) control roughly 65% of global market share, while regional specialists, European sovereign clouds, and developer-centric PaaS/IaaS providers contest the remaining market segments with specialized performance, compliance, and predictable cost structures.
+
+---
+
+## Table of Contents
+
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Cloud Platforms](#saas--hosted-cloud-platforms)
+- [Open-Source Cloud Infrastructure Projects](#open-source-cloud-infrastructure-projects)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+---
+
+## SaaS & Hosted Cloud Platforms
+
+Below is a comparison of top cloud application infrastructure SaaS & hosted platforms, ordered by **Company Scale (Market Cap / Valuation / Revenue)** descending:
+
+| Product | Scale (Valuation / Market Cap / Rev) | Description | Starting Pricing | Free Tier / Trial Limits |
+|:--------|:-------------------------------------|:------------|:-----------------|:-------------------------|
+| **[Microsoft Azure](https://azure.microsoft.com/)** | ~$3.1T Market Cap (~$110B+ Cloud Run-Rate) | Enterprise-grade global hyperscaler with native integration across Active Directory, Microsoft 365, GitHub, and hybrid management via Azure Arc. | B1s Linux VM from ~$0.0116/hour; Blob Storage from $0.018/GB/month | **12 Months Free**: 750 hrs B1s VM, 5GB Blob Storage, 55+ always-free services; $200 credits for 30-day trial |
+| **[Amazon Web Services (AWS)](https://aws.amazon.com/)** | ~$2.2T Market Cap (Amazon parent; AWS ~$105B+ ARR) | Market-share leader in public cloud computing offering 200+ managed services spanning compute (EC2), object storage (S3), relational databases (RDS), and serverless (Lambda). | t3.micro Linux EC2 from ~$0.0104/hour; S3 Standard from $0.023/GB/month | **12 Months Free**: 750 hrs/month t2.micro/t3.micro, 5GB S3, 750 hrs RDS; $200 promotional credits upon signup |
+| **[Google Cloud Platform (GCP)](https://cloud.google.com/)** | ~$2.1T Market Cap (Alphabet parent; GCP ~$40B+ ARR) | Hyperscale infrastructure engineered for big data analytics (BigQuery), Kubernetes (GKE), serverless containers (Cloud Run), and AI/ML (Vertex AI). | e2-micro VM from ~$0.0104/hour; Standard Cloud Storage from $0.020/GB/month | **Always Free**: 1 e2-micro instance (US regions), 5GB storage, 1GB BigQuery queries/month; $300 credit for 90-day trial |
+| **[Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud/)** | ~$480B Market Cap (~$7B+ IaaS/PaaS ARR) | High-performance enterprise cloud known for bare-metal compute, Autonomous Database clusters, and generous resource allocations. | VM.Standard.E4.Flex from ~$0.0075/hour; Block Volumes from $0.0255/GB/month | **Always Free**: 2 AMD VMs (1/8 OCPU, 1GB RAM each), 4 Arm Ampere A1 cores + 24GB RAM, 200GB block storage, 10GB object storage, 2 Autonomous DBs; $300 credit for 30 days |
+| **[Alibaba Cloud](https://www.alibabacloud.com/)** | ~$220B Market Cap (Alibaba Group; ~$15B+ Cloud ARR) | Largest APAC cloud provider offering elastic computing, database management, and low-latency connectivity across Asian and global business centers. | ECS t5-lc1m1.small from ~$0.012/hour; OSS object storage from $0.018/GB/month | **Free Trial**: $300–$1,200 promotional credits (region-dependent) + 12-month free access to select starter tiers |
+| **[IBM Cloud](https://www.ibm.com/cloud)** | ~$200B Market Cap (~$20B+ Hybrid Cloud Revenue) | Enterprise and hybrid multi-cloud platform optimized for regulated environments, mainframe integration, AI (Watsonx), and Red Hat OpenShift clusters. | bx2-2x8 Virtual Server from ~$0.047/hour; Cloud Object Storage from $0.023/GB/month | **Lite Plan**: Always-free 25GB object storage, 500MB Cloudant NoSQL database, single-node test cluster; $200 credit valid 30 days |
+| **[Linode (Akamai)](https://www.linode.com/)** | ~$15B Market Cap (Akamai Technologies parent) | Developer-friendly cloud hosting platform backed by Akamai's global edge network, offering flat and transparent pricing for core compute. | Nanode 1GB RAM VM from $5/month; Block Storage from $0.10/GB/month | **Free Trial**: $100 credit valid for 60 days across compute and storage instances (no perpetual free VM tier) |
+| **[Freshworks Cloud Infrastructure](https://www.freshworks.com/)** | ~$4B Market Cap (~$700M ARR) | Enterprise SaaS business application suite providing customer engagement and IT service management running on multi-tenant managed cloud infrastructure. | Freshdesk from $19/agent/month; Freshservice from $23/agent/month | **Free Plan**: Freshdesk free up to 2 agents with unlimited ticket management; 14-to-21-day full enterprise feature trial |
+| **[DigitalOcean](https://www.digitalocean.com/)** | ~$3.5B Market Cap (~$750M ARR) | Intuitive cloud services platform catering to indie developers, software agencies, and high-growth startups requiring fast provisioning. | Basic Droplet (512MB RAM, 1 vCPU, 10GB SSD) from $4/month; Spaces from $5/month | **Free Trial**: $200 credit valid for 60 days across Droplets, managed Kubernetes, and databases (no perpetual free VM tier) |
+| **[OVHcloud](https://www.ovhcloud.com/)** | ~$1.8B Market Cap (~$1.1B Annual Revenue) | European cloud and bare-metal leader providing sovereign data infrastructure, compliant public cloud instances, and hosted private clouds. | Value VPS from ~$3.50/month; Public Cloud instances from ~$0.0087/hour | **Free Trial**: €100–€200 cloud promotional credit vouchers valid for 30 days via introductory promotional onboarding |
+
+---
+
+## Open-Source Cloud Infrastructure Projects
+
+A collection of top open-source cloud application infrastructure frameworks, container orchestrators, infrastructure-as-code engines, and self-hosted PaaS stacks, ranked by **GitHub Star Count** descending:
+
+| Project | GitHub Stars | Focus Area | Description |
+|:--------|:-------------|:-----------|:------------|
+| **[Kubernetes](https://github.com/kubernetes/kubernetes)** | [![Stars](https://img.shields.io/github/stars/kubernetes/kubernetes?style=social&color=white)](https://github.com/kubernetes/kubernetes/stargazers) | Container Orchestration | Automated deployment, scaling, and operational management of containerized applications; the standard backbone of modern cloud platform engineering. |
+| **[Ansible](https://github.com/ansible/ansible)** | [![Stars](https://img.shields.io/github/stars/ansible/ansible?style=social&color=white)](https://github.com/ansible/ansible/stargazers) | Automation & Config Mgmt | Radically simple IT automation system handling configuration management, application deployment, cloud provisioning, and ad-hoc task execution. |
+| **[Coolify](https://github.com/coollabsio/coolify)** | [![Stars](https://img.shields.io/github/stars/coollabsio/coolify?style=social&color=white)](https://github.com/coollabsio/coolify/stargazers) | Self-Hosted PaaS | Self-hostable, all-in-one alternative to Heroku/Netlify/Vercel; deploy applications, databases, and Docker containers across your own servers. |
+| **[MinIO](https://github.com/minio/minio)** | [![Stars](https://img.shields.io/github/stars/minio/minio?style=social&color=white)](https://github.com/minio/minio/stargazers) | High-Performance Object Storage | S3-compatible high-performance object storage server designed for cloud-native AI/ML workloads, Kubernetes deployments, and hybrid clouds. |
+| **[Terraform](https://github.com/hashicorp/terraform)** | [![Stars](https://img.shields.io/github/stars/hashicorp/terraform?style=social&color=white)](https://github.com/hashicorp/terraform/stargazers) | Infrastructure-as-Code | Declarative infrastructure-as-code engine enabling engineers to provision and version multi-cloud architecture across hundreds of providers. |
+| **[K3s](https://github.com/k3s-io/k3s)** | [![Stars](https://img.shields.io/github/stars/k3s-io/k3s)](https://github.com/k3s-io/k3s/stargazers) | Lightweight Kubernetes | Highly available, certified lightweight Kubernetes distribution packaged as a single binary; ideal for edge computing, IoT, ARM, and CI environments. |
+| **[Dokku](https://github.com/dokku/dokku)** | [![Stars](https://img.shields.io/github/stars/dokku/dokku?style=social&color=white)](https://github.com/dokku/dokku/stargazers) | Docker-Powered PaaS | The smallest PaaS implementation you've ever seen; Docker-powered single-host application deployment platform via `git push`. |
+| **[OpenTofu](https://github.com/opentofu/opentofu)** | [![Stars](https://img.shields.io/github/stars/opentofu/opentofu?style=social&color=white)](https://github.com/opentofu/opentofu/stargazers) | Open-Source IaC | Community-driven, open-source fork of Terraform governed under the Linux Foundation (MPL-2.0 licensed). |
+| **[Rancher](https://github.com/rancher/rancher)** | [![Stars](https://img.shields.io/github/stars/rancher/rancher?style=social&color=white)](https://github.com/rancher/rancher/stargazers) | Multi-Cluster K8s Management | Complete software stack for teams adopting containers; manages multiple Kubernetes clusters across on-premises bare metal and public clouds. |
+| **[Pulumi](https://github.com/pulumi/pulumi)** | [![Stars](https://img.shields.io/github/stars/pulumi/pulumi?style=social&color=white)](https://github.com/pulumi/pulumi/stargazers) | Code-First IaC | Developer-centric infrastructure-as-code platform supporting standard languages including TypeScript, Python, Go, C#, and YAML. |
+| **[Cilium](https://github.com/cilium/cilium)** | [![Stars](https://img.shields.io/github/stars/cilium/cilium?style=social&color=white)](https://github.com/cilium/cilium/stargazers) | Cloud-Native eBPF Networking | eBPF-based networking, observability, and network security for container workloads and Kubernetes service mesh architectures. |
+| **[CapRover](https://github.com/caprover/caprover)** | [![Stars](https://img.shields.io/github/stars/caprover/caprover?style=social&color=white)](https://github.com/caprover/caprover/stargazers) | Automated PaaS | Easy-to-use self-hosted PaaS and container manager for NodeJS, Python, PHP, Ruby, and Docker apps with free SSL automation. |
+| **[Crossplane](https://github.com/crossplane/crossplane)** | [![Stars](https://img.shields.io/github/stars/crossplane/crossplane?style=social&color=white)](https://github.com/crossplane/crossplane/stargazers) | Universal Control Plane | CNCF framework transforming Kubernetes into a universal control plane to orchestrate infrastructure, cloud services, and custom internal platforms. |
+| **[OpenStack](https://github.com/openstack/openstack)** | [![Stars](https://img.shields.io/github/stars/openstack/openstack?style=social&color=white)](https://github.com/openstack/openstack/stargazers) | Private Cloud IaaS | Complete open-source cloud computing fabric for bare metal, virtual machines, and software-defined storage and networking. |
+| **[Apache CloudStack](https://github.com/apache/cloudstack)** | [![Stars](https://img.shields.io/github/stars/apache/cloudstack?style=social&color=white)](https://github.com/apache/cloudstack/stargazers) | Multi-Hypervisor IaaS | Turnkey open-source cloud computing software designed to deploy and manage large networks of virtual machines as highly scalable IaaS. |
+| **[OpenShift (OKD)](https://github.com/openshift/okd)** | [![Stars](https://img.shields.io/github/stars/openshift/okd?style=social&color=white)](https://github.com/openshift/okd/stargazers) | Enterprise Kubernetes PaaS | The origin community distribution of Red Hat OpenShift optimized for continuous developer tooling, container build pipelines, and cluster operations. |
+| **[Cloud Foundry](https://github.com/cloudfoundry/cf-deployment)** | [![Stars](https://img.shields.io/github/stars/cloudfoundry/cf-deployment?style=social&color=white)](https://github.com/cloudfoundry/cf-deployment/stargazers) | Cloud Application Platform | Mature open-source platform-as-a-service enabling development teams to build, test, and deploy applications across multiple clouds with zero lock-in. |
+
+---
+
+## Architecture Blueprint: Building a Modern Cloud Application Stack
+
+```mermaid
+flowchart TD
+    subgraph Edge & Ingress
+        DNS["DNS / Global CDN (Cloudflare / Akamai)"]
+        Ingress["API Gateway / eBPF Mesh (Cilium / Traefik)"]
+    end
+
+    subgraph Platform Layer
+        K8s["Container Orchestration (Kubernetes / K3s / OpenShift)"]
+        PaaS["Developer PaaS Layer (Coolify / Dokku / CapRover)"]
+    end
+
+    subgraph Infrastructure as Code & Control Plane
+        IaC["IaC Provisioning (OpenTofu / Terraform / Pulumi)"]
+        CtrlPlane["Universal Control Plane (Crossplane)"]
+    end
+
+    subgraph Foundational IaaS & Storage
+        Cloud["Hyperscalers (AWS / Azure / GCP / OCI)"]
+        BareMetal["Private Cloud & Bare Metal (OpenStack / Proxmox)"]
+        ObjectStore["Distributed Object Storage (MinIO / S3 / Ceph)"]
+    end
+
+    DNS --> Ingress
+    Ingress --> K8s
+    PaaS --> K8s
+    CtrlPlane --> Cloud
+    CtrlPlane --> BareMetal
+    IaC --> Cloud
+    IaC --> BareMetal
+    K8s --> ObjectStore
+```
+
+---
+
+## How to Contribute
+
+We welcome additions, corrections, and improvements from DevOps practitioners, platform engineers, and open-source maintainers:
+
+1. **Fork the repository** to your GitHub account.
+2. **Add or edit entries** in `README.md` keeping formatting, accurate pricing, free tier details, and stargazer badges consistent.
+3. Ensure open-source projects are placed in the table corresponding to their star count order.
+4. **Submit a pull request** outlining the suggested changes and linking authoritative references.
+
+---
+
+## Disclaimer
+
+- This list is independently curated by the community for educational and architecture-evaluation purposes. It is not sponsored by or affiliated with any cloud provider.
+- Cloud infrastructure pricing, promotional credit amounts, and free tier quotas change frequently. Always consult the respective vendor's official pricing calculator before provisioning production systems.
+
+---
+
+*Curated with precision for platform engineers, DevOps professionals, site reliability engineers (SREs), and cloud architects.*
