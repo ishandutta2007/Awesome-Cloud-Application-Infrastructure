@@ -1,6 +1,6 @@
 # Awesome-Cloud-Application-Infrastructure
 
-# Top Cloud Application Infrastructure Ecosystem
+## Top Cloud Application Infrastructure Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Compute, Storage, Networking & Managed Platform Services*  
